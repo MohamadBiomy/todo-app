@@ -107,10 +107,10 @@ function switchTheme() {
   if (isDark) {
     isDark = false
     document.body.classList.add("light-mode")
-    themeToggle.children[0].src = "./images/icon-sun.svg"
+    themeToggle.children[0].src = "./images/icon-moon.svg"
     localStorage.setItem("theme", "light")
   } else {
-    themeToggle.children[0].src = "./images/icon-moon.svg"
+    themeToggle.children[0].src = "./images/icon-sun.svg"
     isDark = true
     document.body.classList.remove("light-mode")
     localStorage.setItem("theme", "dark")
