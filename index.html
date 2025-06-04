@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Todo app</title>
+</head>
+
+
+<body>
+
+  <div class="container">
+    <!-- header -->
+    <header>
+      <h1>TODO</h1>
+      <div class="theme-toggle">
+        <img src="./images/icon-moon.svg" alt="">
+      </div>
+    </header>
+    <!-- add new task -->
+    <div class="add-task">
+      <span></span>
+      <input type="text" placeholder="Create a new todo...">
+      <p class="add">add</p>
+    </div>
+    <!-- tasks container -->
+    <div class="tasks-container">
+      <div class="no-tasks">
+        Add new task to appear here
+      </div>
+    </div>
+    <!-- control -->
+    <div class="control">
+      <p><span class="tasks-left" id="tasks-quan">0</span> tasks left</p>
+      <div class="switch-state">
+        <span class="active" data-type="all">All</span>
+        <span data-type="active">Active</span>
+        <span data-type="completed">Completed</span>
+      </div>
+      <p class="clear">Clear Completed</p>
+    </div>
+    <!-- message -->
+    <p class="message">Drag and drop to reorder list</p>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
