@@ -57,6 +57,7 @@ body {
   background-repeat: no-repeat;
   background-color: var(--body-bgcolor);
   background-size: contain;
+  transition: .3s;
 }
 
 /* container */
