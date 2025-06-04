@@ -292,8 +292,7 @@ body.light-mode .tasks-container {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--border-color);
-  cursor: grab;
-  transition: opacity 0.2s ease;
+  cursor: pointer;
 }
 .task span {
   display: block;
@@ -348,10 +347,6 @@ body.light-mode .tasks-container {
 }
 .task.completed:hover p {
   font-weight: 400;
-}
-.task.dragging {
-  opacity: 0.5;
-  cursor: grabbing;
 }
 @media (max-width: 600px) {
   .tasks-container {
